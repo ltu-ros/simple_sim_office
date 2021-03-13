@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- Load map -->
+  <param name="map_dir" value="$(find simple_sim_office)/map" />
+  <rosparam command="load" file="$(find simple_sim_office)/map/white_tape_floor.yaml" />
+
+  <!-- Load robot -->
+  <rosparam command="load" file="$(find simple_sim_office)/robot/ackermann.yaml" />
+
+  <include file="$(find simple_sim)/launch/simple_sim.launch">
+
+  </include>
+
+</launch>

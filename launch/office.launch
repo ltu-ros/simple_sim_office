@@ -1,5 +1,7 @@
 <launch>
 
+  <arg name="show_rviz" default="false" />
+
   <!-- Load map -->
   <param name="map_dir" value="$(find simple_sim_office)/map" />
   <rosparam command="load" file="$(find simple_sim_office)/map/blue_tape_floor.yaml" />
@@ -10,7 +12,7 @@
   <rosparam command="load" file="$(find simple_sim_office)/robot/differential.yaml" />
 
   <include file="$(find simple_sim)/launch/simple_sim.launch">
-    <arg name="show_rviz" value="false" />
+    <arg name="show_rviz" value="$(arg show_rviz)" />
     <arg name="show_kb_teleop" value="false" />
   </include>
 

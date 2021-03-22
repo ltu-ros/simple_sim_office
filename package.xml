@@ -12,4 +12,6 @@
   <url type="website">https://github.com/ltu-ros/simple_sim_office</url>
 
   <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>timed_roslaunch</exec_depend>
 </package>

@@ -29,7 +29,7 @@
     <node
         pkg="timed_roslaunch"
         type="timed_roslaunch.sh"
-        args="1 simple_sim simple_sim.launch show_rviz:=true show_kb_deleop:=false"
+        args="1 simple_sim simple_sim.launch show_rviz:=true show_kb_teleop:=false"
         output="screen"
         name="timed_roslaunch"
     />
